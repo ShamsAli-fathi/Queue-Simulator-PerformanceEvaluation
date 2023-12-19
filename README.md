@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="">
-    <img src="https://th.bing.com/th/id/OIG.d8H9v3WCQjiJhPwx0vFp?pid=ImgGn" alt="Logo" width="80" height="80">
+    <img src="https://th.bing.com/th/id/OIG.d8H9v3WCQjiJhPwx0vFp?pid=ImgGn" alt="Logo" width="160" height="160">
   </a>
 
   <h3 align="center">Queue Simulator - Performance Evaluation</h3>
