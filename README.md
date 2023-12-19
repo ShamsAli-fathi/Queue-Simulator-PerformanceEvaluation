@@ -18,11 +18,11 @@
 
 Consider a queuing network composed of three queues, with the time distribution between entering the first queue and the service time for all queues determined by their unique exponential rates. The goal is to write a simulation program that, after the model reaches a steady state, calculates its performance metrics.
 
-![Queue Figure](https://github.com/ShamsAli-fathi/Linux-Kernel-Tracing/blob/main/Queue%20Simulator%20-%20Performance%20Evaluation/src/QueueFigure.png)
+![Queue Figure](https://github.com/ShamsAli-fathi/Queue-Simulator-PerformanceEvaluation/blob/main/Queue%20Simulator%20-%20Performance%20Evaluation/src/QueueFigure.png)
 
-> The scripts are located in ["prog" folder](https://github.com/ShamsAli-fathi/Linux-Kernel-Tracing/tree/main/Queue%20Simulator%20-%20Performance%20Evaluation/prog)
+> The scripts are located in ["prog" folder](https://github.com/ShamsAli-fathi/Queue-Simulator-PerformanceEvaluation/tree/main/Queue%20Simulator%20-%20Performance%20Evaluation/prog)
 
-> A set of plots from a test run are shown [here](https://github.com/ShamsAli-fathi/Linux-Kernel-Tracing/tree/main/Queue%20Simulator%20-%20Performance%20Evaluation/src)
+> A set of plots from a test run are shown [here](https://github.com/ShamsAli-fathi/Queue-Simulator-PerformanceEvaluation/tree/main/Queue%20Simulator%20-%20Performance%20Evaluation/src)
 
 ## Tools
 
@@ -38,7 +38,7 @@ The code is divided into 3 scripts: **main**, **functions** and **plotting**; an
 
 ### Main script
 
-![Main1](https://github.com/ShamsAli-fathi/Linux-Kernel-Tracing/blob/main/Queue%20Simulator%20-%20Performance%20Evaluation/src/Main1.png)
+![Main1](https://github.com/ShamsAli-fathi/Queue-Simulator-PerformanceEvaluation/blob/main/Queue%20Simulator%20-%20Performance%20Evaluation/src/Main1.png)
 
 _Number of users_ is given as a variable. There is no limit to the amount of users. The time durations either for _service time_ or _user entry intervals_. Two dictionaries are created in order to be used for dataframe creation. \*\* is zeroed initially because it is directly the first row in its dataframe.
 
@@ -48,7 +48,7 @@ _Statistical Counter_ dataframe is created 3 different times, referring to our 3
 
 The _main_ script is divided into 3 sections, which all 3 are similar in terms of function calling and initializing.
 
-![Main2](https://github.com/ShamsAli-fathi/Linux-Kernel-Tracing/blob/main/Queue%20Simulator%20-%20Performance%20Evaluation/src/Main2.png)
+![Main2](https://github.com/ShamsAli-fathi/Queue-Simulator-PerformanceEvaluation/blob/main/Queue%20Simulator%20-%20Performance%20Evaluation/src/Main2.png)
 
 In each section, an _eventList_ is constructed, the snapshot creating function is called and the required plots are drawn. For this simulation, it is needed to make the first snapshot manually. Then it is passed to _snapshotCreate_ function to generate the rest of the snapshots.
 
@@ -58,7 +58,7 @@ Also, all users' average service time is also handled in the main script.
 
 ### Function script
 
-![Function1](https://github.com/ShamsAli-fathi/Linux-Kernel-Tracing/blob/main/Queue%20Simulator%20-%20Performance%20Evaluation/src/Function1.png)
+![Function1](https://github.com/ShamsAli-fathi/Queue-Simulator-PerformanceEvaluation/blob/main/Queue%20Simulator%20-%20Performance%20Evaluation/src/Function1.png)
 
 Two classes are defined; **eventList** and **branches**.
 
@@ -92,7 +92,7 @@ _entryPlot_ and _statisticalCountersPlot_ are created for each queue. A _perform
 
 The y-axis in Q(t) plot shows the value of Q(t) in each snapshot/timestamp. So it is the accumulated value.
 
-> A set of plots from a test run are shown [here](https://github.com/ShamsAli-fathi/Linux-Kernel-Tracing/tree/main/Queue%20Simulator%20-%20Performance%20Evaluation/src)
+> A set of plots from a test run are shown [here](https://github.com/ShamsAli-fathi/Queue-Simulator-PerformanceEvaluation/tree/main/Queue%20Simulator%20-%20Performance%20Evaluation/src)
 
 ## Acknowledgments/References
 
